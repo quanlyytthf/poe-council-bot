@@ -26,7 +26,7 @@ class CouncilBot(fp.PoeBot):
             bot_response = ""
             try:
                 # Gọi Bot và stream kết quả
-                async for msg in fp.stream_request(request, bot_name, request.query):
+                async for msg in fp.stream_request(request, bot_name, request.query, api_key="mF1n6xywsN5fLuRDCbX6hD3XaPsM3O67")::
                     bot_response += msg.text
                 
                 yield fp.PartialResponse(text=f"> ✅ **{bot_name}**: Xong.\n")
