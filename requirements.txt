@@ -1,2 +1,2 @@
-fastapi-poe
-uvicorn
+Flask
+requests
